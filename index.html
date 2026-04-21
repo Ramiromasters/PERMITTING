@@ -24,8 +24,7 @@
 <body class="min-h-screen bg-fixed bg-cover bg-center text-slate-800" style="background-image: url('TampaSkyImage.png');">
     <div class="fixed inset-0 bg-black/20 pointer-events-none"></div>
     
-	<!-- Top Resources Banner -->
-<div id="topBanner" class="fixed top-0 left-0 right-0 z-50 bg-emerald-200/40 backdrop-blur border-b border-emerald-300">
+	<div id="topBanner" class="fixed top-0 left-0 right-0 z-50 bg-emerald-200/40 backdrop-blur border-b border-emerald-300">
   <div class="max-w-7xl mx-auto px-4 md:px-8 h-8 flex items-center justify-end">
     <button id="resourcesBtn"
       class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-emerald-300/50 transition-colors"
@@ -37,7 +36,6 @@
     </button>
   </div>
 
-  <!-- Dropdown -->
   <div id="resourcesMenu" class="hidden">
     <div class="max-w-7xl mx-auto px-4 md:px-8 pb-2">
   <div class="bg-white/95 rounded-lg shadow-md border border-emerald-200 overflow-hidden">
@@ -45,10 +43,8 @@
       Resources
     </div>
 
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
 
-          <!-- Property Appraisers -->
           <div class="p-2">
             <div class="px-2 py-1 text-xs font-bold uppercase tracking-widest text-slate-500">Property Appraisers</div>
 
@@ -58,30 +54,8 @@
               <span class="font-medium text-slate-700">Florida Department of Revenue</span>
               <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
             </a>
-
-            <a href="https://www.sc-pa.com/" target="_blank" rel="noopener noreferrer"
-              class="flex items-center gap-3 p-3 rounded-lg hover:bg-emerald-50 transition-colors group">
-              <span class="material-symbols-outlined text-emerald-700">public</span>
-              <span class="font-medium text-slate-700">Sarasota</span>
-              <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
-            </a>
-
-            <a href="https://www.ccappraiser.com/" target="_blank" rel="noopener noreferrer"
-              class="flex items-center gap-3 p-3 rounded-lg hover:bg-emerald-50 transition-colors group">
-              <span class="material-symbols-outlined text-emerald-700">public</span>
-              <span class="font-medium text-slate-700">Charlotte County</span>
-              <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
-            </a>
-
-            <a href="https://www.miamidade.gov/pa/property_search.asp" target="_blank" rel="noopener noreferrer"
-              class="flex items-center gap-3 p-3 rounded-lg hover:bg-emerald-50 transition-colors group">
-              <span class="material-symbols-outlined text-emerald-700">account_balance</span>
-              <span class="font-medium text-slate-700">Miami-Dade PA</span>
-              <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
-            </a>
           </div>
 
-          <!-- USGS -->
           <div class="p-2">
             <div class="px-2 py-1 text-xs font-bold uppercase tracking-widest text-slate-500">USGS</div>
 
@@ -89,6 +63,17 @@
               class="flex items-center gap-3 p-3 rounded-lg hover:bg-emerald-50 transition-colors group">
               <span class="material-symbols-outlined text-emerald-700">public</span>
               <span class="font-medium text-slate-700">USGS TOPO VIEWER</span>
+              <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
+            </a>
+          </div>
+
+          <div class="p-2">
+            <div class="px-2 py-1 text-xs font-bold uppercase tracking-widest text-slate-500">Federal</div>
+
+            <a href="https://oeaaa.faa.gov/oeaaa/oe3a/main/#/home" target="_blank" rel="noopener noreferrer"
+              class="flex items-center gap-3 p-3 rounded-lg hover:bg-emerald-50 transition-colors group">
+              <span class="material-symbols-outlined text-emerald-700">flight</span>
+              <span class="font-medium text-slate-700">FAA WEB</span>
               <span class="material-symbols-outlined text-slate-300 text-sm ml-auto opacity-0 group-hover:opacity-100">arrow_outward</span>
             </a>
           </div>
@@ -151,23 +136,6 @@
                 <div class="bg-emerald-50/80 px-6 py-4 border-b border-slate-100 flex items-center justify-between cursor-pointer select-none" onclick="toggleSection(this)">
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-amber-600">folder_open</span>
-                        <h2 class="font-bold text-slate-800 text-lg">FAA</h2>
-                    </div>
-                    <span class="material-symbols-outlined chevron text-slate-400">expand_more</span>
-                </div>
-                <div class="p-2 hidden card-content">
-                    <a href="https://oeaaa.faa.gov/oeaaa/oe3a/main/#/home" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
-                        <div class="text-slate-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">flight</span></div>
-                        <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">FAA WEB</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://oeaaa.faa.gov/oeaaa/oe3a/main/#/home</div></div>
-                        <span class="material-symbols-outlined text-slate-300 text-sm opacity-0 group-hover:opacity-100">arrow_outward</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="glass rounded-xl overflow-hidden shadow-lg border border-white/40 card-hover transition-all duration-300 category-card h-fit">
-                <div class="bg-emerald-50/80 px-6 py-4 border-b border-slate-100 flex items-center justify-between cursor-pointer select-none" onclick="toggleSection(this)">
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-amber-600">folder_open</span>
                         <h2 class="font-bold text-slate-800 text-lg">Charlotte County</h2>
                     </div>
                     <span class="material-symbols-outlined chevron text-slate-400">expand_more</span>
@@ -210,6 +178,16 @@
                     <span class="material-symbols-outlined chevron text-slate-400">expand_more</span>
                 </div>
                 <div class="p-2 hidden card-content">
+                    <button onclick="copyText(this, 'YOUR_EMAIL_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy ID</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_EMAIL_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
+                    <button onclick="copyText(this, 'YOUR_ACCESS_KEY_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy Key</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_ACCESS_KEY_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
                     <a href="https://cvportal.collier.gov/cityviewweb/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                         <div class="text-slate-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">account_balance</span></div>
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">E-permit</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://cvportal.colliercountyfl.gov/cityviewweb</div></div>
@@ -259,7 +237,17 @@
                     </div>
                     <span class="material-symbols-outlined chevron text-slate-400">expand_more</span>
                 </div>
-                <div class="p-2 hidden card-content"> 
+                <div class="p-2 hidden card-content">
+                    <button onclick="copyText(this, 'YOUR_USERNAME_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy ID</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_USERNAME_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
+                    <button onclick="copyText(this, 'YOUR_PASSWORD_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy Key</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_PASSWORD_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
                     <a href="https://www.mymanatee.org/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                         <div class="text-blue-500 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">public</span></div>
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">Gov</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://www.mymanatee.org/</div></div>
@@ -293,6 +281,18 @@
                 </div>
                 
                 <div class="p-2 hidden card-content">
+                    
+                    <button onclick="copyText(this, 'YOUR_EMAIL_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy ID</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_EMAIL_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
+                    <button onclick="copyText(this, 'YOUR_PASSWORD_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy Key</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_PASSWORD_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
+
                     <a href="https://www.miamidade.gov/global/home.page" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                         <div class="text-slate-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">account_balance</span></div>
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">Gov</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://www.miamidade.gov/global/home.page</div></div>
@@ -487,10 +487,7 @@
                                 </div>
                             </div>
                         </div>
-                        ```
 						
-						
-
                         <div class="sub-section">
                             <div class="flex items-center justify-between p-3 rounded-lg cursor-pointer sub-header transition-colors link-item" onclick="toggleSection(this)">
                                 <div class="flex items-center gap-2">
@@ -504,7 +501,7 @@
                                     <div class="text-blue-500 bg-white p-1 rounded shadow-sm border border-slate-100"><span class="material-symbols-outlined text-sm">public</span></div>
                                     <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">GOV</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://www.miamisprings-fl.gov/building</div></div>
                                 </a>
-                                <a href="https://gisweb.miamidade.gov/emaps/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
+                                <a href="https://gisweb.miamidade.gov/emaps/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                                     <div class="text-slate-600 bg-white p-1 rounded shadow-sm border border-slate-100"><span class="material-symbols-outlined text-sm">account_balance</span></div>
                                     <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">e-Maps Viewer</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://gisweb.miamidade.gov/emaps/</div></div>
                                 </a>
@@ -524,6 +521,16 @@
                     <span class="material-symbols-outlined chevron text-slate-400">expand_more</span>
                 </div>
                 <div class="p-2 hidden card-content">
+                    <button onclick="copyText(this, 'YOUR_EMAIL_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy ID</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_EMAIL_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
+                    <button onclick="copyText(this, 'YOUR_PASSWORD_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+                        <div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+                        <div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy Key</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_PASSWORD_HERE</div></div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+                    </button>
                     <a href="https://www.scgov.net/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                         <div class="text-blue-500 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">public</span></div>
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">Sarasota County</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://www.scgov.net/</div></div>
@@ -544,7 +551,7 @@
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">Open Data Main Page</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://data-sarco.opendata.arcgis.com/search?tags=Utilities</div></div>
                         <span class="material-symbols-outlined text-slate-300 text-sm opacity-0 group-hover:opacity-100">arrow_outward</span>
                     </a>
-                    <a href="https://experience.arcgis.com/experience/48741ab2a7b24c0fb5f360d0f40824d5/page/Home#widget_348=search_status:%7B%22text%22%3A%220471040016%22%2C%22status%22%3A%22%7B%5C%22configId%5C%22%3A%5C%22config_0%5C%22%7D%22%7D" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
+                    <a href="https://experience.arcgis.com/experience/48741ab2a7b24c0fb5f360d0f40824d5/page/Home" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
                         <div class="text-emerald-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">map</span></div>
                         <div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">Flood and Elevation zones</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://experience.arcgis.com/experience/48741ab2a7b24c0fb5f360d0f40824d5/page/Home</div></div>
                         <span class="material-symbols-outlined text-slate-300 text-sm opacity-0 group-hover:opacity-100">arrow_outward</span>
@@ -576,7 +583,20 @@
                         <span class="material-symbols-outlined text-slate-300 text-sm opacity-0 group-hover:opacity-100">arrow_outward</span>
                     </a>
 					<div class="px-3 py-2 mt-2 bg-slate-50 border-t border-b border-slate-100 font-semibold text-slate-500 text-sm uppercase tracking-wider">City of North Port</div>
-						<a href="https://aca-prod.accela.com/NORTHPORT/Account/RegisterConfirm.aspx?UserSeqNum=39793" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
+
+						<button onclick="copyText(this, 'YOUR_USERNAME_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+							<div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+							<div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy ID</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_USERNAME_HERE</div></div>
+							<span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+						</button>
+
+						<button onclick="copyText(this, 'YOUR_PASSWORD_HERE')" class="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-amber-100/50 transition-colors group link-item text-left">
+							<div class="text-amber-600 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined icon-display">content_copy</span></div>
+							<div class="min-w-0 flex-1"><div class="font-bold text-amber-900 highlight-target">📋 Copy Key</div><div class="text-xs text-amber-700/60 font-mono truncate">YOUR_PASSWORD_HERE</div></div>
+							<span class="text-xs font-bold text-amber-600 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Copy</span>
+						</button>
+
+						<a href="https://aca-prod.accela.com/NORTHPORT/Account/RegisterConfirm.aspx" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 transition-colors group link-item">
 							<div class="text-blue-500 bg-white p-2 rounded shadow-sm border border-slate-100 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">public</span></div>
 							<div class="min-w-0 flex-1"><div class="font-medium text-slate-700 highlight-target">North Port E-Permits</div><div class="text-xs text-slate-400 truncate font-mono opacity-60">https://aca-prod.accela.com/NORTHPORT/...</div></div>
 							<span class="material-symbols-outlined text-slate-300 text-sm opacity-0 group-hover:opacity-100">arrow_outward</span>
@@ -726,5 +746,5 @@
 
 		
     </script>
-<!-- YOUR NEW HTML HERE \r\n--></body>
+</body>
 </html>
